@@ -14,7 +14,7 @@ label_heading = canvas.create_text(150, 90, font=('Times', '24', 'bold italic'),
 label_name_tag = canvas.create_text(40, 165, font=('Times', '16', 'bold'), text="Name :")
 label_adress_tag = canvas.create_text(40, 205, font=('Times', '16', 'bold'), text="adress :")
 label_pin_tag = canvas.create_text(50, 250, font=('Times', '16', 'bold'), text="Pin no. :")
-label_dob_tag = canvas.create_text(50, 250, font=('Times', '16', 'bold'), text="date of birth :")
+label_dob_tag = canvas.create_text(60, 300, font=('Times', '16', 'bold'), text="date of birth :")
 
 
 label_name = Label(root)
@@ -26,7 +26,7 @@ label_dateofbirth = Label(root)
 label_pin = Label(root)
 
 
-#add function
+#add function 
 def myCardDetails():
     name = "Anika Roy"
     print(type(name))
@@ -51,8 +51,9 @@ button1 = Button(root, text = "show my drivers license", command= myCardDetails)
 button1.configure(width=20, activebackground="#9EC6EE", relief=FLAT)
 button1_window = canvas.create_window(150, 330, anchor=CENTER, window=button1)
 label_name_window = canvas.create_window(120, 165, anchor=CENTER, window=label_name)
-label_grade_window = canvas.create_window(90, 205, anchor=CENTER, window=label_grade)
-label_subjects_window = canvas.create_window(155, 252, anchor=CENTER, window=label_subjects)
+label_grade_window = canvas.create_window(90, 225, anchor=CENTER, window=label_adress)
+label_subjects_window = canvas.create_window(155, 252, anchor=CENTER, window=label_pin)
+label_dateofbirth_window = canvas.create_window(170, 302, anchor=CENTER, window=label_dateofbirth)
 canvas.pack()
 
 #tkinter basic template end statement
